@@ -17,7 +17,7 @@ hatter.addEventListener('click', async function(){
     if(zarva===true){
         for (let index = 0; index < 11; index++) {
            kep.src=`images/bottlecap_${index}.png`;
-           await new Promise(pr=>setTimeout(pr, 100));
+           await new Promise(pr=>setTimeout(pr, 50));
         }
         const randomIndex=Math.floor(Math.random()*uzik.length); // [0,5]
         szoveg.textContent=uzik[randomIndex];
@@ -27,7 +27,7 @@ hatter.addEventListener('click', async function(){
         szoveg.textContent="";
         for (let index = 10; index>=0 ; index--) {
             kep.src=`images/bottlecap_${index}.png`;
-            await new Promise(pr=>setTimeout(pr, 100));
+            await new Promise(pr=>setTimeout(pr, 50));
         }
         zarva=true;
     }   
