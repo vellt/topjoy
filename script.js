@@ -25,7 +25,7 @@ hatter.addEventListener('click', async function() {
     if (zarva === true) {
         for (let index = 0; index <= 10; index++) {
            kep.src = images[index].src; // Már előre betöltött képet használunk
-           await new Promise(pr => setTimeout(pr, 50)); // Kicsit növeltük a várakozási időt
+           await new Promise(pr => setTimeout(pr, 13)); // Kicsit növeltük a várakozási időt
         }
         const randomIndex = Math.floor(Math.random() * uzik.length); // [0,5]
         szoveg.textContent = uzik[randomIndex];
@@ -34,7 +34,7 @@ hatter.addEventListener('click', async function() {
         szoveg.textContent = "";
         for (let index = 10; index >= 0; index--) {
             kep.src = images[index].src; // Már előre betöltött képet használunk
-            await new Promise(pr => setTimeout(pr, 50)); // Kicsit növeltük a várakozási időt
+            await new Promise(pr => setTimeout(pr, 13)); // Kicsit növeltük a várakozási időt
         }
         zarva = true;
     }   
